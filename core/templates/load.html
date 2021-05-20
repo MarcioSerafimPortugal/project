@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-Load</title>
+    </head>
+<body>
+    <h1>InPP - Project Results - Loading data from the database</h1>
+    <ul>
+        {% for project_name in load %}
+            <li>
+                {{project_name.project}}
+            </li>
+        {% endfor%}
+        {% for project_employee in load %}
+        <li>
+            {{project_employee.employee}}
+        </li>
+        {% endfor%}
+        {% for project_month in load %}
+            <li>
+                {{project_month.month}}
+            </li>
+        {% endfor%}
+    </ul>
+</body>
+</html>
